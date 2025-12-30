@@ -1,0 +1,42 @@
+package ifExample;
+
+import java.util.Scanner;
+
+public class IfEx05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("금액을 입력하시오");
+		int money = scan.nextInt();
+		
+		int moneyA50000 = money/50000; // 50000원의 몫
+		int moneyB50000 = money%50000; // 50000원의 나머지
+		
+		int moneyA10000 = moneyB50000/10000; // 10000원의 몫
+		int moneyB10000 = moneyB50000%10000; // 10000원의 나머지
+		
+		int moneyA5000 = moneyB10000 / 5000; // 5000원의 몫 
+		int moneyB5000 = moneyB10000 % 5000; // 5000원의 나머지 
+		
+		int moneyA1000 = moneyB5000 / 1000; // 1000원의 몫
+		int moneyB1000 = moneyB5000 % 1000; // 1000원의 나머지
+		
+		int moneyA500 = moneyB1000 / 500; // 500원의 몫
+		int moneyB500 = moneyB1000 % 500; // 500원의 몫
+		
+		int moneyA100 = moneyB500 / 100; // 100원의 몫 
+		int moneyB100 = moneyB500 % 100; // 100원의 나머지
+		
+		System.out.println("오만원권 : " + moneyA50000 + "매");
+		System.out.println("만원권 : " + moneyA10000 + "매");
+		System.out.println("오천원권 : " + moneyA5000 + "매");
+		System.out.println("천원권 : " + moneyA1000 + "매");
+		System.out.println("오백원권 : " + moneyA500 + "매");
+		System.out.println("백원권 : " + moneyA100 + "매");
+		
+		
+	}
+
+}

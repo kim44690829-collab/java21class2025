@@ -1,0 +1,18 @@
+package ifExample;
+
+import java.util.Scanner;
+
+public class IfEx11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("===롯데리아===");
+		System.out.println("1.불고기 버거 : 8700원");
+		System.out.println("2.새우\t버거");
+		System.out.println("3.콜\t\t라");
+		
+	}
+
+}

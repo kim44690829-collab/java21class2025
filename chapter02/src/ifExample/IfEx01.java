@@ -1,0 +1,35 @@
+package ifExample;
+
+import java.util.Scanner;
+
+public class IfEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		// String은 객체 데이터 타입으로 String dbid = "1234"의 값이 저장된 힙메모리의 주소가 dbid에 존재하기 때문에 직접 비교할 수 없다.
+		// 문자를 비교할 때는 equals()메서드를 이용해서 힙 메모리의 값을 직접 비교해야한다.
+		String dbid = "1234";
+		String dbpw = "1111";
+		
+		System.out.print("ID 입력 : ");
+		String id = scan.next();
+		
+		System.out.print("Pw 입력 : ");
+		String pw = scan.next();
+		
+		if(dbid.equals(id) && dbpw.equals(pw)) {
+			System.out.println("로그인 성공");
+		}else {
+			System.out.println("로그인 실패");
+		}
+		// .equals()의 부정은 !를 앞에 붙여준다.
+		if(!dbid.equals(id) && !dbpw.equals(pw)) {
+			System.out.println("로그인 성공");
+		}else {
+			System.out.println("로그인 실패");
+		}
+	}
+
+}

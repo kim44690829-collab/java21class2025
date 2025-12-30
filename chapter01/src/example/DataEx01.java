@@ -1,0 +1,88 @@
+package example;
+
+public class DataEx01 {
+
+	public static void main(String[] args) {
+		// char 데이터 타입 => 한 음절 표현 반드시 'a' 작은 따옴표 사용
+		char ch = 'A'; // 변수 = 값(value)을 대입하는 번지 주소를 이름으로 표현
+		char ch2 = 'a';
+		
+		System.out.println(ch);
+		// (int)ch = 명시적 형변환 => 데이터 타입을 ()안에있는 타입으로 변환
+		System.out.println((int)ch);
+		System.out.println((int)ch2);
+		
+		int ch3 = 67;
+		System.out.println((char)ch3);
+		
+		// String => 객체 타입, 반드시 첫 글자는 대문자
+		// Integer => Integer 객체 데이터 타입
+		// 객체 타입의 변수에 저장되는 값은 실제 값이 존재하는 메모리의 번지 주소이다.
+		// 현재 str 변수에 저장된 데이터는 "About"가 아니라 "About"이 존재하는 메모리의 주소인 2ff4acd0 이다.
+		String str = "About";
+		System.out.println(System.identityHashCode(str)); //identityHashCode 는 10진수로 출력됨
+		int id = System.identityHashCode(str); // 804564176
+		System.out.println(Integer.toHexString(id)); // 2ff4acd0 => 16진수
+		
+		String str2 = "홍길동";
+		System.out.println(str);
+		System.out.println(str2);
+		
+		// 이스케이프 형식을 이용해서 문자안에서 특정 문자를 포함시킬 수 있다.
+		// 이스케이프 형식 => \" => \뒤의 문자 출력
+		// String str3 = "나는 "자바"를 좋아합니다.";
+		String str4 = "나는\"자바\"를 좋아합니다.";
+		String str5 = "나는 '자바'를 좋아합니다.";
+		System.out.println(str4);
+		System.out.println(str5);
+		System.out.println("번호\t이름\t직업");
+		System.out.print("행단위 출력");
+		System.out.print("다음줄 개행 \n");
+		System.out.println("우리는 \"개발자\"이다");
+		System.out.println("봄\\여름\\가을\\겨울");
+		
+		
+		
+		// byte 데이터 타입 => 1byte = 8bit
+		// 자바 기본으로 연산의 메모리 용량이 32bit
+		// 기본으로 정수는 int 데이터 타입을 사용한다.
+		byte by1 = 127;
+		// byte by2 = 128; // 오류 => 허용범위 초과
+
+		// long 데이터 타입 => 정수(int) 타입의 허용범위를 초과한 경우 반드시 L 또는 l 접미사를 붙인다.
+		// long lo1 = 10000000000; int 타입의 허용범위를 초과했는데 L을 쓰지않아 오류
+		long lo2 = 10000000000L;
+		long lo3 = 70; // int 의 범위를 초과하지 않아 long을 썼음에도 L을 쓰지 않아도 오류가 뜨지 않음.
+		
+		// 실수형 자료 => double(8byte), Float(4byte)
+		// Float은 반드시 접미사 F또는 f를 붙인다.
+		double dou = 3.14;
+		// float flo = 3.14; // 접미사가 없어서 오류
+		float flo2 = 3.14f;
+		
+		
+		// 논리타입 => boolean 은 true(참) / false(거짓) 두가지 값만 가진다.
+		boolean boo1 = true;
+		boolean boo2 = false;
+		
+		// 묵시적 형 변환 : 작은 공간의 메모리에서 큰 공간의 메모리로 변환할때 암묵적으로 변환해줌 
+		byte by = 10;
+		int in = by;
+		System.out.println("in = " + in);
+		
+		// 명시적 형 변환 : 큰 공간의 메모리에서 작은 공간의 메모리로 변환할때 어떤 형태로 변환할지 명시
+		int ivar = 100;
+		byte by2 = (byte)ivar;
+		System.out.println("by2 = " + by2);
+				
+		ivar = 128;
+		by2 = (byte)ivar;
+		System.out.println("by2 = " + by2);
+		
+		char ch5 = 'A';
+		System.out.println(ch5 + 1);
+		
+		System.out.println(10 + 20 + "30");
+	}
+
+}

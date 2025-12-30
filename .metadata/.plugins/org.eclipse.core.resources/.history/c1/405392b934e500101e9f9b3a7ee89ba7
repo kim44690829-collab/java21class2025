@@ -1,0 +1,15 @@
+package ifExample;
+
+import java.util.Scanner;
+
+public class ScanTest {
+
+	public static void main(String[] args) {
+		// Scanner는 자료를 키보드로부터 입력받을 수 있는 '클래스'이다.
+		
+		// 단 Scanner는 클래스이므로 반드시 new Scanner() 형식으로 생성해야 한다.
+		Scanner scan = new Scanner(System.in);
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package ifExample;
+
+public class SwTest {
+
+	public static void main(String[] args) {
+		
+		char grade = 'C'; // char는 대소문자 구분함
+		
+		switch(grade) {
+		case 'A': System.out.println("VVIP 혜택"); break;
+		case 'B': System.out.println("VIP 혜택"); break;
+		case 'C': System.out.println("우수 회원 혜택"); break;
+		case 'D': System.out.println("일반 혜택"); break;
+		default: System.out.println("혜택 NO!"); break;
+		}
+
+		int value = 123;
+		
+		System.out.printf("상품의 가격은 %d\n", value);
+		System.out.printf("상품의 가격은 %06d\n", value);
+//		System.out.printf("상품의 가격은 %-06d\n", value);
+		
+		String name = "홍길동";
+		int age = 19;
+		double score = 92.445;
+		double sum = 158;
+		System.out.printf("이름은 %s이고 나이는 %d인 학생의 점수는 %.1f입니다.", name, age, sum/3);
+		
+	}
+
+}
