@@ -11,7 +11,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="charge1"/>
+			<item value="depositAcc"/>
+			<item value="acc1Total"/>
+			<item value="run"/>
 			<item value="scan"/>
 			<item value=""/>
 		</list>
