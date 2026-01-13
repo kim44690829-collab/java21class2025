@@ -13,6 +13,8 @@
 		<item key="isRegEx" value="false"/>
 		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="idChk"/>
+			<item value="itemSel"/>
 			<item value="ItemManager"/>
 			<item value="categorySel"/>
 			<item value="charge1"/>
