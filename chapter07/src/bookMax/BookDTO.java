@@ -1,6 +1,7 @@
 package bookMax;
 
 public class BookDTO {
+	// private 접근 제어자는 자기자신 클래스에서는 접근할 수 있음.
 	private String bookName;
 	private String author;
 	private int price;
@@ -16,20 +17,13 @@ public class BookDTO {
 	public String getBookName() {
 		return bookName;
 	}
-	public void setBookName(String bookName) {
-		this.bookName = bookName;
-	}
+
 	public String getAuthor() {
 		return author;
 	}
-	public void setAuthor(String author) {
-		this.author = author;
-	}
+
 	public int getPrice() {
 		return price;
-	}
-	public void setPrice(int price) {
-		this.price = price;
 	}
 	
 	
