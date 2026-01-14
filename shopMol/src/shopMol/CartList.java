@@ -4,7 +4,7 @@ public class CartList {
 	String id;
 	String itemName;
 	int itemPrice;
-	int quantity;
+	int quantity = 1;;
 	
 	public CartList() {};
 	

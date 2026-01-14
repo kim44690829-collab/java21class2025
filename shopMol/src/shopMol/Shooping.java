@@ -86,7 +86,6 @@ public class Shooping extends UserMenu{
 				cart.cartAdd(id[super.log], i.name, i.price, wishlist.quantity);
 			}
 		}
-		
 	}
 	
 	// 쇼핑 메뉴 2번

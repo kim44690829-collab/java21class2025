@@ -10,13 +10,14 @@ public class Cart {
 	
 	// 장바구니 추가 함수
 	public void cartAdd(String id, String itemName, int itemPrice, int quantity) {
-		int totalPrice = itemPrice * quantity;
 		for(CartList c : cartlist) {
 			if(c.itemName.equals(itemName)) {
-				c.quantity++;
+				c.quantity += 1;
+				c.itemPrice = c.quantity * itemPrice;
+				return;
 			}
-			cartlist.add(new CartList(id, itemName, totalPrice, quantity));
 		}
+		cartlist.add(new CartList(id, itemName, itemPrice, quantity));
 	}
 	
 	// 출력 함수
