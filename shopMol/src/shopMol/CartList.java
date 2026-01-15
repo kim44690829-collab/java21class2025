@@ -1,15 +1,15 @@
 package shopMol;
 
 public class CartList {
-	String id;
+	String userId;
 	String itemName;
 	int itemPrice;
 	int quantity = 1;;
 	
 	public CartList() {};
 	
-	public CartList(String id, String itemName, int itemPrice, int quantity) {
-		this.id = id;
+	public CartList(String userId, String itemName, int itemPrice, int quantity) {
+		this.userId = userId;
 		this.itemName = itemName;
 		this.itemPrice = itemPrice;
 		this.quantity = quantity;		

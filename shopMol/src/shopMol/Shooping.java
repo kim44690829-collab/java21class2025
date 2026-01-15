@@ -92,7 +92,12 @@ public class Shooping extends UserMenu{
 	public void shopMenu2() {
 		System.out.println("=============== 내 장바구니 ===============");
 		System.out.println();
-		cart.printCart();
+//		cart.printCart();
+//		System.out.println(cart.cartlist.get(log).id);
+//		System.out.println(id[super.log]);
+		cart.printCart2(id[super.log]);
+
+		//cart.printCart();
 		System.out.println();
 		System.out.println("========================================");
 		System.out.println();
