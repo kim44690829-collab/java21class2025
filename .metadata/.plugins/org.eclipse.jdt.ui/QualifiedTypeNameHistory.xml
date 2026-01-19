@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="ifExample.ScanTest"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.sun.tools.jdeprscan.scan.Scan"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="classPart.Student"/>
     <fullyQualifiedTypeName name="methodClass.ReturnClass"/>
     <fullyQualifiedTypeName name="methodClass.Return02"/>
@@ -21,15 +20,20 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="interfaceTest.CompleteCalc"/>
     <fullyQualifiedTypeName name="scheduler.Scheduler"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="interfaceExample01.Buyable"/>
     <fullyQualifiedTypeName name="interfaceExample02.Chicken"/>
     <fullyQualifiedTypeName name="interfaceExample02.Monkey"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="shopMol_ot.Item"/>
 </qualifiedTypeNameHistroy>
