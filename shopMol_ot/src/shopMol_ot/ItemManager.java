@@ -61,7 +61,7 @@ public class ItemManager {
 	
 	// 장바구니
 	// usId, caId => 카테고리 index 번호 , itemId => item index번호
-	public void addCart(String usId, int caId, int itemId) {
+	public void addCart(String usId,  int itemId) {
 		// 이미 장바구니에 아이템 존재하는지 검사
 		// 이미 존재하면 수량누적, 가격누적
 		
@@ -111,9 +111,9 @@ public class ItemManager {
 	}
 	
 	// 전체 아이템 추가
-	public void addItem02(String addName, int addPrice, int addCategory) {
+	public void addItem02(String addName, int addPrice, int categoryNum) {
 		// item 클래스 추가
-		Item temp = new Item(addName, addPrice, category.get(addCategory));
+		Item temp = new Item(addName, addPrice, category.get(categoryNum));
 		itemList.add(temp);
 	}
 	
